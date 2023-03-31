@@ -1,11 +1,13 @@
 /*CSS file*/
 
-h1 {
+/*Don't style the headers
+style classes instead*/
+/* h1 {
     background: powderblue;
-    /*border-radius: 5px;*/
+    /*border-radius: 5px;
     display: static;
-    /* I did some font rearrangement
-    cuz I like Tahoma*/
+    I did some font rearrangement
+    cuz I like Tahoma
     font-family: Tahoma,
     'Segoe UI', Geneva, Verdana, sans-serif;
     font-size: 60px;
@@ -15,15 +17,16 @@ h1 {
     padding: 30px;
     text-align: center;
 
-    /* left: 500px; */
+    left: 500px;
 
-    /*position: absolute; */
-}
+    position: absolute;
+} */
 
 p {
     /*same thing as above font family
     I prefer Helvetica*/
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
 }
 
 a:link {
@@ -44,4 +47,93 @@ a:hover{
 a:active{
     color: gold;
     text-decoration: underline;
+}
+
+/*Styling for classes*/
+
+/*container to mimic what others have done before*/
+.container{
+    align-items: center;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/*jumbotron should be used for headers*/
+.jumbotron{
+    background-color: gainsboro;
+    color: tomato;
+    display: static;
+    /*I did some font rearrangement
+    cuz I like Tahoma*/
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 5%;
+    /* margin-right: auto;*/
+    padding: 30px;
+    text-align: center;
+}
+
+.text{
+    float: right;
+}
+
+
+#myHeader {
+    background-color: gainsboro;
+    border-width: 15px;
+    border-style: double;
+    border-color:palevioletred;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+/* if something breaks it might be bcoz of this*/
+/* ----------------------------------------------------------*/
+/* yoooooo I figured out this cool html trick!
+
+This should make the screen go all rainbow-y like the kahoot lobby
+-EAVI
+
+baColor are the colors the background should cycle through
+spin is how I learned how to make the colors change
+*/
+body{
+	text-align: center;
+	animation: baColor 10s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes baColor {
+	0% {
+		background-color: darkred;
+	}
+
+	20% {
+		background-color: mediumorchid;
+	}
+
+	40% {
+		background-color: royalblue;
+	}
+
+	60% {
+		background-color: forestgreen;
+	}
+
+	80% {
+		background-color: goldenrod;
+	}
+
+	100% {
+		background-color: darkorange;
+	}
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
