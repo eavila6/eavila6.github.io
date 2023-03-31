@@ -49,6 +49,12 @@ a:active{
     text-decoration: underline;
 }
 
+img{
+    float: right;
+    /*height: auto;
+    width: auto;*/
+}
+
 /*Styling for classes*/
 
 /*container to mimic what others have done before*/
