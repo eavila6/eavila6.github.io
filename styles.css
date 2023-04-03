@@ -124,7 +124,7 @@ body{
 
 @keyframes baColor {
 	0% {
-		background-color: darkred;
+		background-color: firebrick;
 	}
 
 	20% {
@@ -132,11 +132,11 @@ body{
 	}
 
 	40% {
-		background-color: royalblue;
+		background-color: lightskyblue;
 	}
 
 	60% {
-		background-color: forestgreen;
+		background-color: mediumseagreen;
 	}
 
 	80% {
