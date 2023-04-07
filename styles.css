@@ -50,7 +50,10 @@ a:active{
 }
 
 img{
-    float: right;
+    float: center;
+    max-width: 100%;
+    max-height: 100%;
+    /*object-fit: fill;*/
     /*height: auto;
     width: auto;*/
 }
@@ -66,6 +69,14 @@ img{
     display: flex;
     justify-content: center;
     margin: auto;
+}
+
+.image{
+    float: right;
+    align-items: center;
+    justify-content: center;
+    margin: 4%;
+    /*object-fit: contain;*/
 }
 
 /*jumbotron should be used for headers*/
@@ -88,7 +99,10 @@ img{
 }
 
 .text{
-    float: right;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    /*padding: 20px;*/
 }
 
 .stylepara{
@@ -206,5 +220,17 @@ body{
     }
     .header-right {
         float: none;
+    }
+
+    /*.image-right{
+        float: none;
+    }*/
+
+    .text{
+        width: 60%;
+    }
+
+    img{
+        width:120%;
     }
 }
