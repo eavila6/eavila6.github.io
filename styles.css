@@ -27,6 +27,7 @@ p {
     I prefer Helvetica*/
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
+    line-height: 1.6;   /*this is the standard line height*/
 }
 
 a:link {
@@ -53,7 +54,7 @@ img{
     float: center;
     max-width: 100%;
     max-height: 100%;
-    /*object-fit: fill;*/
+    object-fit: contain;
     /*height: auto;
     width: auto;*/
 }
@@ -65,7 +66,7 @@ img{
     align-items: center;
     background-color: lightsteelblue;
     border-style: inset;
-    border-width: 5px;
+    border-width: 2px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -75,7 +76,10 @@ img{
     float: right;
     align-items: center;
     justify-content: center;
-    margin: 4%;
+    /*these margins are very carefully balanced
+    plz do not touch*/
+    margin-left: 0.5%;
+    margin-right: 2%;
     /*object-fit: contain;*/
 }
 
@@ -222,15 +226,11 @@ body{
         float: none;
     }
 
-    /*.image-right{
-        float: none;
-    }*/
-
     .text{
         width: 60%;
     }
 
     img{
-        width:120%;
+        width:700%;
     }
 }
